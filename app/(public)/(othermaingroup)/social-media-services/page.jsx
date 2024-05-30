@@ -5,6 +5,7 @@ import socialImage from "../../../../public/images/socialMediaMarketing/social.j
 import Aos from "aos";
 
 import Image from "next/image";
+import { HeadingDetail } from "@/components/MenuComponents/headingMenu/HeadingMenu";
 
 function SocialMedia() {
   let pricingData = [
@@ -119,6 +120,9 @@ function SocialMedia() {
         </div>
       </div>
       <section className="mt-12 sm:mt-24 ">
+        <div className="mb-10 sm:mb-20 mt-10 sm:mt-20">
+          <HeadingDetail heading={"OUR WORKFLOW"} />
+        </div>
         <div class="mx-auto  px-4 sm:px-10    ">
           <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
             {pricingData?.map((item, index) => {
@@ -132,7 +136,7 @@ function SocialMedia() {
                       {item?.name}
                     </h3>
 
-                    <div class="flex justify-center items-baseline my-8">
+                    <div class="flex justify-center items-baseline my-4 sm:my-8">
                       <span class="mr-2 font-varino text-4xl sm:text-5xl  text-white">
                         ${item.price}
                       </span>
@@ -142,11 +146,11 @@ function SocialMedia() {
                     </div>
                     <ul
                       role="list"
-                      class="mb-14 space-y-4 text-left p-6 xl:px-8"
+                      class="mb-14 space-y-4 text-left p-3 xl:px-8"
                     >
                       {item?.services?.map((service, index) => {
                         return (
-                          <li key={index} class="flex items-center space-x-3">
+                          <li key={index} class="flex items-center space-x-3 ">
                             <svg
                               class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
                               fill="currentColor"
