@@ -128,6 +128,7 @@ function SocialMedia() {
             {pricingData?.map((item, index) => {
               return (
                 <div
+                  data-aos="fade-up"
                   key={index}
                   className="bg-gradient-to-b from-[#EC66B7] to-[#2D5887] p-1 rounded-2xl"
                 >
