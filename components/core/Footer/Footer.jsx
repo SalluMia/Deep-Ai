@@ -10,7 +10,7 @@ import Pointingup from "../../../public/images/pointingup.png";
 import phone from "../../../public/svgs/phone.svg";
 import clock from "../../../public/svgs/clock.svg";
 import email from "../../../public/svgs/email.svg";
-import Logo from "../../../public/svgs/Logo.svg";
+import Logo from "../../../public/images/deep-ai.png";
 import linkedIn from "../../../public/svgs/linkedin.svg";
 import facebook from "../../../public/svgs/facebook.svg";
 import whatsapp from "../../../public/svgs/whatsapp.svg";

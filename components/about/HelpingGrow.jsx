@@ -1,7 +1,7 @@
-'use client'
-import React,{useState,useEffect} from 'react'
-import Aos from 'aos';
-import 'aos/dist/aos.css'
+"use client";
+import React, { useState, useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import Gradient1 from "../../public/svgs/gradient1.svg";
 import RightGradient from "../../public/svgs/right.svg";
@@ -20,9 +20,9 @@ import { FaPlus, FaTimes } from "react-icons/fa";
 // Data for Accordion
 const data = [
   {
-    heading: "What is Alright Tech?",
+    heading: "What is Deep Ai?",
     detail:
-      "Alright Tech, is a progressive software development company based in Rawalpindi, Pakistan.",
+      "Deep Ai, is a progressive software development company based in Rawalpindi, Pakistan.",
   },
   {
     heading: "What services do you provide?",
@@ -34,10 +34,10 @@ const data = [
 // Functional component
 const HelpingGrow = () => {
   const preExpandedPanels = [0];
-  
-  useEffect(()=>{
+
+  useEffect(() => {
     Aos.init();
-  },[])
+  }, []);
 
   return (
     <>
@@ -73,15 +73,19 @@ const HelpingGrow = () => {
           >
             Helping you grow in the real of Web 3.0
           </h1>
-          <p  data-aos="fade-up" className="text-[14px] sm:text-[16px] xl:text-[18px] text-center font-monosans text-white font-extralight w-10/12 md:w-6/12 xl:w-6/12">
-          We are helping you grow with Web 3.0, where Gen AI, Blockchain, and modern tech come together to achieve technological advancements.
+          <p
+            data-aos="fade-up"
+            className="text-[14px] sm:text-[16px] xl:text-[18px] text-center font-monosans text-white font-extralight w-10/12 md:w-6/12 xl:w-6/12"
+          >
+            We are helping you grow with Web 3.0, where Gen AI, Blockchain, and
+            modern tech come together to achieve technological advancements.
           </p>
         </div>
 
         {/* Image and Accordion Section */}
         <div className="grid lg:grid-cols-2 gap-5 lg:my-20 my-10 lg:px-20 px-5">
           {/* Image Section */}
-          <div className="flex justify-center"  data-aos="fade-up">
+          <div className="flex justify-center" data-aos="fade-up">
             <Image
               src={helpImg}
               alt="helping grow"
@@ -100,26 +104,32 @@ const HelpingGrow = () => {
                 color: "transparent",
               }}
             >
-              Welcome to Alright Tech
+              Welcome to Deep Ai
             </h1>
 
             {/* Accordion Component */}
             <Accordion
-             data-aos="fade-up"
+              data-aos="fade-up"
               className="border-none outline-none mt-5  font-monosans"
               allowMultipleExpanded={false}
               preExpanded={[0]}
             >
               {data.map((item, i) => (
-                <AccordionItem 
+                <AccordionItem
                   data-aos="fade-up"
                   className="outline-none overflow-hidden mb-5 shadow-lg"
                   key={i}
                   uuid={i}
                 >
                   <AccordionItemHeading>
-                    <AccordionItemButton className="flex flex-wrap items-center justify-between gap-y-8 border-b border-white p-4 w-full cursor-pointer"  data-aos="fade-up">
-                      <div className="text-white lg:text-[20px]"  data-aos="fade-up">
+                    <AccordionItemButton
+                      className="flex flex-wrap items-center justify-between gap-y-8 border-b border-white p-4 w-full cursor-pointer"
+                      data-aos="fade-up"
+                    >
+                      <div
+                        className="text-white lg:text-[20px]"
+                        data-aos="fade-up"
+                      >
                         {item.heading}
                       </div>
 

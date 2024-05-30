@@ -1,7 +1,7 @@
-'use client'
-import React,{useState,useEffect} from 'react'
-import Aos from 'aos';
-import 'aos/dist/aos.css'
+"use client";
+import React, { useState, useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import profile from "../../public/images/profile.png";
 import Image from "next/image";
@@ -10,9 +10,9 @@ import linkedIn from "../../public/svgs/linkedin2.svg";
 import leftTop from "../../public/svgs/leftTop.svg";
 import Link from "next/link";
 const Experts = () => {
-  useEffect(()=>{
+  useEffect(() => {
     Aos.init();
-  },[])
+  }, []);
   return (
     <>
       <div className="absolute left-0">
@@ -25,18 +25,22 @@ const Experts = () => {
       <section className="relative flex flex-col space-y-4 p-5 items-center mt-[130px] xl:mx-32">
         <div className=" flex flex-col gap-3 lg:gap-4 xl:gap-5 justify-center items-center mb-5 sm:mb-8 lg:mb-10">
           <h1
-          data-aos="fade-up"
+            data-aos="fade-up"
             className="font-varino text-[25px] xl:text-[54px] text-center capitalize"
             style={{
               background: "linear-gradient(to bottom, white, gray)",
               WebkitBackgroundClip: "text",
               color: "transparent",
-            }}>
+            }}
+          >
             Meet our CORE Team
           </h1>
-          <p data-aos="fade-up" className="text-[16px] xl:text-[18px] text-center font-monosans text-white font-extralight w-10/12 md:w-8/12 xl:w-[75%]">
-            Discover the expertise within Alright Tech as we introduce our team
-            of dedicated tech professionals committed to innovation, excellence,
+          <p
+            data-aos="fade-up"
+            className="text-[16px] xl:text-[18px] text-center font-monosans text-white font-extralight w-10/12 md:w-8/12 xl:w-[75%]"
+          >
+            Discover the expertise within Deep Ai as we introduce our team of
+            dedicated tech professionals committed to innovation, excellence,
             and delivering transformative solutions for your success.
           </p>
         </div>
@@ -44,7 +48,7 @@ const Experts = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 justify-center  py-5 px-2">
           {Data.map((expert, index) => (
             <div
-            data-aos="fade-up"
+              data-aos="fade-up"
               key={expert.id}
               style={{ height: "368px" }}
               className={`bg-gradient-to-r from-fuchsia-500 to-violet-500   rounded-3xl p-1 ${

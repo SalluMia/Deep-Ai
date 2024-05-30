@@ -1,7 +1,7 @@
-'use client'
-import React,{useState,useEffect} from 'react'
-import Aos from 'aos';
-import 'aos/dist/aos.css'
+"use client";
+import React, { useState, useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import Image from "next/image";
 import gradient1 from "../../public/svgs/gradient1.svg";
@@ -23,9 +23,9 @@ const ContactMain = () => {
   const [email, setEmail] = useState();
   const [message, setMessage] = useState();
 
-  useEffect(()=>{
+  useEffect(() => {
     Aos.init();
-  },[])
+  }, []);
 
   const handleContact = async (e) => {
     e.preventDefault();
@@ -45,7 +45,7 @@ const ContactMain = () => {
       console.log(error);
       toast.error("Try Again");
     }
-  }
+  };
 
   return (
     <>
@@ -65,7 +65,7 @@ const ContactMain = () => {
       </div>
       <section className="  relative  xl:mx-20 mx-auto my-16   lg:my-20">
         <h1
-           data-aos="fade-up"
+          data-aos="fade-up"
           className="font-varino text-[35px] xl:text-[66px] text-center"
           style={{
             background: "linear-gradient(to bottom, white, gray)",
@@ -79,33 +79,51 @@ const ContactMain = () => {
         <div className=" grid lg:grid-cols-2  my-10 ">
           <div className=" flex flex-col  justify-center  p-4  gap-5 ">
             <div>
-              <p data-aos="fade-up" className="  text-gray-300   font-monosans capitalize">
+              <p
+                data-aos="fade-up"
+                className="  text-gray-300   font-monosans capitalize"
+              >
                 Contact with email
               </p>
-              <p data-aos="fade-up" className=" text-white font-[500] text-[1.5rem] font-monosans">
-              info@AlrightTech.com
+              <p
+                data-aos="fade-up"
+                className=" text-white font-[500] text-[1.5rem] font-monosans"
+              >
+                info@AlrightTech.com
               </p>
             </div>
             <div>
-              <p data-aos="fade-up" className=" text-gray-300    font-monosans capitalize">
+              <p
+                data-aos="fade-up"
+                className=" text-gray-300    font-monosans capitalize"
+              >
                 Contact on phone/whatsapp
               </p>
-              <p data-aos="fade-up" className=" text-white font-[500] text-[1.5rem] font-monosans">
-              +92 349 5209847
+              <p
+                data-aos="fade-up"
+                className=" text-white font-[500] text-[1.5rem] font-monosans"
+              >
+                +92 349 5209847
               </p>
             </div>
           </div>
 
           <div className=" flex flex-col gap-10 justify-center items-center p-3">
-            <Image src={map} alt="locator" data-aos="fade-up"/>
+            <Image src={map} alt="locator" data-aos="fade-up" />
 
-            <p data-aos="fade-up" className=" text-white font-[500] text-[1.125rem] font-monosans text-center">
-              1st Floor, Alright Tech Private Limited, Sarfraz Business &
-              Technology park, near Arid University & Shamsabad Metro Station,
-              Shamsabad, Rawalpindi
+            <p
+              data-aos="fade-up"
+              className=" text-white font-[500] text-[1.125rem] font-monosans text-center"
+            >
+              1st Floor, Deep Ai Private Limited, Sarfraz Business & Technology
+              park, near Arid University & Shamsabad Metro Station, Shamsabad,
+              Rawalpindi
             </p>
 
-            <div data-aos="fade-up" className="justify-start items-start gap-5 flex">
+            <div
+              data-aos="fade-up"
+              className="justify-start items-start gap-5 flex"
+            >
               <Link
                 href="https://www.linkedin.com/company/alright-tech/"
                 target="blank"
@@ -142,7 +160,8 @@ const ContactMain = () => {
 
         <div className=" grid lg:grid-cols-2 my-10">
           <div className=" flex justify-center items-center">
-            <p data-aos="fade-up"
+            <p
+              data-aos="fade-up"
               className="font-varino text-[2rem]  text-center"
               style={{
                 background: "linear-gradient(to bottom, white, gray)",
@@ -157,7 +176,8 @@ const ContactMain = () => {
             <div className="relative flex flex-col gap-20 py-10 px-5 rounded-3xl border-4 border-pink-400">
               {/* <---- Gradient -----> */}
               <div className="absolute ">
-                <Image data-aos="fade-up"
+                <Image
+                  data-aos="fade-up"
                   className="xl:w-full -z-10  animate-pulse "
                   alt="gradient1"
                   src={purpleGradient}
@@ -166,7 +186,10 @@ const ContactMain = () => {
               {/* <---- Input fields  -----> */}
               <div className="flex flex-col gap-5 z-20">
                 {/* Input field for name  */}
-                <div className="flex flex-col gap-1 justify-start items-start" data-aos="fade-up">
+                <div
+                  className="flex flex-col gap-1 justify-start items-start"
+                  data-aos="fade-up"
+                >
                   <label
                     htmlFor=""
                     className="text-center text-white text-lg font-normal font-varino capitalize leading-normal"
@@ -189,7 +212,10 @@ const ContactMain = () => {
                   />
                 </div>
                 {/* Input field for Email  */}
-                <div className="flex flex-col gap-1 justify-start items-start" data-aos="fade-up">
+                <div
+                  className="flex flex-col gap-1 justify-start items-start"
+                  data-aos="fade-up"
+                >
                   <label
                     htmlFor=""
                     className="text-center text-white text-lg font-normal font-varino capitalize leading-normal"
@@ -212,7 +238,10 @@ const ContactMain = () => {
                   />
                 </div>
                 {/* Input field for Message  */}
-                <div className="flex flex-col gap-1 justify-start items-start" data-aos="fade-up">
+                <div
+                  className="flex flex-col gap-1 justify-start items-start"
+                  data-aos="fade-up"
+                >
                   <label
                     htmlFor=""
                     className="text-center text-white text-lg font-normal font-varino capitalize leading-normal"
@@ -240,7 +269,8 @@ const ContactMain = () => {
                 data-aos="fade-up"
                 onClick={handleContact}
                 className="text-center text-white text-lg font-medium font-monosans capitalize 
-                px-6 py-3 bg-sky-500 rounded-[90px] justify-center items-center gap-2.5 inline-flex cursor-text">
+                px-6 py-3 bg-sky-500 rounded-[90px] justify-center items-center gap-2.5 inline-flex cursor-text"
+              >
                 Submit Message
               </button>
             </div>

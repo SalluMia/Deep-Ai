@@ -28,7 +28,7 @@ const monaSans = localFont({
 });
 
 export const metadata = {
-  title: "Alright Tech",
+  title: "Deep Ai",
   description:
     "Join our world Where Gen AI, Web 3.0, Blockchain, Serverless Cloud meet Modern Full-Stack Applications and SAAS Development",
 };
@@ -36,9 +36,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${varino.variable} ${monaSans.variable}  bg-[#111424]`}
-      >
+      <body className={`${varino.variable} ${monaSans.variable}  bg-[#111424]`}>
         {/* <Navbar /> */}
         <ReactQueryProvider>
           <Provider>{children}</Provider>

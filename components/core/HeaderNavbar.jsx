@@ -3,12 +3,18 @@ import { SelectedIcon } from "@/icons";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import Logo from "../../public/svgs/Logo.svg";
+import Logo from "../../public/images/deep-ai.png";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 import Links from "./HeaderLinks";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
 const services = [
+  {
+    id: 0,
+    name: "Social Media Marketing",
+    subservice: [],
+    link: "/social-media-services",
+  },
   {
     id: 1,
     name: "GENERATIVE AI",

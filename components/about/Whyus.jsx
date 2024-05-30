@@ -24,7 +24,7 @@ const WhyUsData = [
     icon: Icon2,
     heading: "White-labeled solutions",
     detail:
-      "Alright Tech provides superior white-labeled solutions with seamless integration and customizable branding for your company.",
+      "Deep Ai provides superior white-labeled solutions with seamless integration and customizable branding for your company.",
   },
   {
     icon: Icon3,
