@@ -153,7 +153,7 @@ const Footer = () => {
                       </div>
                     </div>
                     <div className="text-white text-md font-medium font-monosans lowercase">
-                      hr.alrighttech@gmail.com
+                      info@AlrightTech.com
                     </div>
                   </div>
                 </div>

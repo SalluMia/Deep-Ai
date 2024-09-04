@@ -16,11 +16,11 @@ function TeamCards() {
   },[])
 
   return (
-    <div className='w-full h-auto px-44 text-white'>
+    <div className='w-full h-auto px-5 sm:px-16 md:px-24 lg:px-44 text-white'>
        {List.map((value, index)=>{
         return(
-            <section key={index} className='flex justify-between my-8'>
-            <div className='bg-gradient-to-b from-[#EC66B7] to-[#2D5887] p-1 rounded-[30px] h-[400px] w-[30%]'>
+            <section key={index} className='flex justify-between items-center my-8'>
+            <div className='bg-gradient-to-b from-[#EC66B7] to-[#2D5887] p-1 rounded-[30px] h-[350px] md:h-[400px] w-[30%]'>
               <div className='w-full h-full bg-[#111424] rounded-[28px]'/>
            </div>
            <div className=' h-[400px] w-[65%] flex flex-col justify-center gap-2' data-aos="fade-up">
