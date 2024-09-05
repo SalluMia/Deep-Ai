@@ -42,17 +42,17 @@ const services = [
     subservice: ["Custom App Development", "Flutter App Development"],
     link: "/mobileappdevelopment",
   },
-  {
-    id: 4,
-    name: "BLOCKCHAIN",
-    subservice: [
-      "Generative AI Development",
-      "Natural Language Processing (NLP)",
-      "AI Chatbot Development",
-      "Retrieval-Augmented Generation (RAG)",
-    ],
-    link: "/blockchain",
-  },
+  // {
+  //   id: 4,
+  //   name: "BLOCKCHAIN",
+  //   subservice: [
+  //     "Generative AI Development",
+  //     "Natural Language Processing (NLP)",
+  //     "AI Chatbot Development",
+  //     "Retrieval-Augmented Generation (RAG)",
+  //   ],
+  //   link: "/blockchain",
+  // },
   {
     id: 5,
     name: "WEB 3.0 METAVERSE",

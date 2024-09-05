@@ -22,10 +22,10 @@ function DropDownMenu({ closeDropdown }) {
       name: "Career",
       path: "/career",
     },
-    {
-      name: "Our Gallery",
-      path: "/ourgallery",
-    },
+    // {
+    //   name: "Our Gallery",
+    //   path: "/ourgallery",
+    // },
     {
       name: "Our Team",
       path: "/ourteam",

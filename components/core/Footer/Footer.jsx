@@ -41,7 +41,6 @@ const Footer = () => {
   ];
   const services = [
     "GENERATIVE AI",
-    "BLOCKCHAIN",
     "MOBILE APP DEVELOPEMENT",
     "WEB 3.0 AND METAVERSE",
     "MODERN SAAS APPLICATIONS",

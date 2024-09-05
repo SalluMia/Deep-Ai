@@ -33,8 +33,8 @@ function OurTeam() {
           <IoMdArrowBack className='text-white text-2xl'/>
         </div>
       </div> 
-      <SubHeading subheading={"Team Members"}/>
-      <TeamMembers/>     
+      {/* <SubHeading subheading={"Team Members"}/> */}
+      {/* <TeamMembers/>      */}
     </div>
   )
 }
