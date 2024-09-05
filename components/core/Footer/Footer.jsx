@@ -165,7 +165,7 @@ const Footer = () => {
         <div className=" p-6 my-3">
           <div className="flex flex-col justify-center gap-3 sm:flex-row h-10 sm:justify-between items-center">
             <div className="text-white text-md font-medium font-monosans lowercase hidden sm:block">
-              hr.alrighttech@gmail.com
+              info@alrighttech.com
             </div>
             <div className="h-[19px] justify-center items-start lg:gap-5 xl:gap-8 flex">
               {/* <div className=" flex flex-wrap justify-center items-center gap-5 ">
