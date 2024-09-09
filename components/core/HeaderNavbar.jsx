@@ -184,7 +184,7 @@ const Navbar = () => {
             <div className="block lg:hidden cursor-pointer">
               <div className="bg-[#00A7E1] hover:bg-[#00749C] focus:outline-none focus:ring focus:ring-[#00A7E1] transition-colors duration-300 px-[30px] py-[7px] rounded-3xl flex justify-center items-center">
                 <p className="text-[20px] font-monosans text-[#fff]">
-                  Get A Quote
+                  Book a Free Consultation
                 </p>
               </div>
             </div>
@@ -194,7 +194,7 @@ const Navbar = () => {
         <Link href="/getQuotes" className="lg:block hidden cursor-pointer">
           <div className="bg-[#00A7E1] hover:bg-[#00749C] focus:outline-none focus:ring focus:ring-[#00A7E1] transition-colors duration-300 lg:px-[28px] lg:py-[6px] xl:px-[30px] xl:py-[7px] rounded-3xl flex justify-center items-center">
             <p className="lg:text-[18px] xl:text-[20px] font-monosans text-[#fff]">
-              Get A Quote
+              Book a Free Consultation
             </p>
           </div>
         </Link>

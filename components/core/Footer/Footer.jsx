@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 
 import { FaWhatsapp } from "react-icons/fa6";
+import { CiLocationOn } from "react-icons/ci";
 
 import { useRouter } from "next/navigation";
 import Link from "next/link";
@@ -133,7 +134,22 @@ const Footer = () => {
                       <Image src={phone} alt="phone" />
                     </div>
                     <div className="text-white text-md font-medium font-monosans">
-                      +92 346 3164772
+                      +92 323 9735118
+                    </div>
+                  </div>
+
+                  <div className="justify-start items-center gap-5 inline-flex w-full">
+                    <CiLocationOn className="text-[50px] text-white" />
+                    <div className="text-white text-md font-medium font-monosans">
+                      US - 2097 Prospect Ave Eastmeadow NY 11554
+                    </div>
+                  </div>
+
+                  <div className="justify-start items-center gap-5 inline-flex w-full">
+                    <CiLocationOn className="text-[80px] text-white" />
+                    <div className="text-white text-md font-medium font-monosans">
+                      Pakistan - 44000 Alright Tech Raja Asad Hameed Shaheed
+                      Road, Shamsabad
                     </div>
                   </div>
 

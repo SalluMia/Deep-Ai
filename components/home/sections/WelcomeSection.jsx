@@ -31,7 +31,7 @@ const WelcomeSection = () => {
         <h1 className="font-varino text-[16px] sm:text-[20px] xl:text-[28px] text-white">
           WELCOME TO
         </h1>
-        <Heading>Deep Ai</Heading>
+        <Heading>Deep Ai!</Heading>
         <p className="text-[14px] sm:text-[16px] xl:text-[18px] text-center font-monosans text-white font-extralight w-10/12 md:w-[60%] xl:w-[75%] my-2 ">
           Master The Serverless Cloud To Unlock Digital Potential. Developing
           Concepts into Effective Solutions.

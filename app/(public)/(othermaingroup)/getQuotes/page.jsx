@@ -1,7 +1,7 @@
-'use client'
-import React,{useState,useEffect} from 'react'
-import Aos from 'aos';
-import 'aos/dist/aos.css'
+"use client";
+import React, { useState, useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import Gradient1 from "../../.../../../../public/svgs/gradient1.svg";
 import Gradient2 from "../../.../../../../public/svgs/gradient2.svg";
@@ -12,10 +12,9 @@ import Image from "next/image";
 
 // Functional component for the job application form
 const GetQoutes = () => {
-
-  useEffect(()=>{
+  useEffect(() => {
     Aos.init();
-  },[])
+  }, []);
 
   const projects = [
     { name: "Select Your Project Type" },
@@ -41,10 +40,13 @@ const GetQoutes = () => {
   const [cost, setCost] = useState("");
   const [projectDescription, setProjectDescription] = useState("");
   const [formErrors, setFormErrors] = useState({});
-  const [isUploading, setIsUploading] = useState(false)
+  const [isUploading, setIsUploading] = useState(false);
 
-  const allowedFileTypes = ["application/msword", "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "application/pdf"];
-
+  const allowedFileTypes = [
+    "application/msword",
+    "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "application/pdf",
+  ];
 
   const handleRemoveFile = () => {
     setSelectedFile(null);
@@ -55,9 +57,12 @@ const GetQoutes = () => {
     if (file && allowedFileTypes.includes(file.type)) {
       setSelectedFile(file);
     } else {
-      toast.error("Invalid file type for Document. Please upload a DOC, DOCX, or PDF file.", {
-        duration: 4000
-      });
+      toast.error(
+        "Invalid file type for Document. Please upload a DOC, DOCX, or PDF file.",
+        {
+          duration: 4000,
+        }
+      );
     }
   };
 
@@ -136,15 +141,13 @@ const GetQoutes = () => {
     formData.append("description", projectDescription);
     formData.append("file", selectedFile);
 
-    const toastId = toast.loading('Uploading please wait !!');
+    const toastId = toast.loading("Uploading please wait !!");
 
     try {
-      const res = await fetch("/api/quote",
-        {
-          method: 'POST',
-          body: formData
-        }
-      );
+      const res = await fetch("/api/quote", {
+        method: "POST",
+        body: formData,
+      });
       const data = await res.json();
 
       if (res.status === 201) {
@@ -163,10 +166,7 @@ const GetQoutes = () => {
         setTechnology("");
       } else {
         toast.dismiss(toastId);
-        toast.error(
-          data.error
-        )
-
+        toast.error(data.error);
       }
     } catch (error) {
       toast.dismiss(toastId);
@@ -193,7 +193,7 @@ const GetQoutes = () => {
         <div className="lg:px-20">
           {/* Header */}
           <h1
-           data-aos="fade-up"
+            data-aos="fade-up"
             className="font-varino text-[2rem] xl:text-[4rem] text-center"
             style={{
               background: "linear-gradient(to bottom, white, gray)",
@@ -201,11 +201,14 @@ const GetQoutes = () => {
               color: "transparent",
             }}
           >
-            Get A Quote
+            Book a Free Consultation
           </h1>
 
           {/* Description */}
-          <p  data-aos="fade-up"  className="text-white text-[1.25rem] font-monosans font-[300] text-center">
+          <p
+            data-aos="fade-up"
+            className="text-white text-[1.25rem] font-monosans font-[300] text-center"
+          >
             Tell us about your unique requirements, desired features, and any
             specific design elements you have in mind using the form below. We
             will tailor a quote that suits your needs and sets you on the path
@@ -218,7 +221,10 @@ const GetQoutes = () => {
         <div className="my-10">
           <form onSubmit={handleSubmit}>
             {/* Input for Full Name */}
-            <div className="flex flex-col gap-1 justify-start items-start"  data-aos="fade-up"> 
+            <div
+              className="flex flex-col gap-1 justify-start items-start"
+              data-aos="fade-up"
+            >
               <label
                 htmlFor=""
                 className="text-center text-white text-xl ms-4 font-normal font-varino capitalize leading-normal"
@@ -236,8 +242,9 @@ const GetQoutes = () => {
                 onChange={(e) => {
                   setFullName(e.target.value);
                 }}
-                className={`rounded-3xl border text-white border-white justify-start items-center p-[.8rem] w-full  bg-transparent focus:outline-white  focus:border-white ${formErrors.fullName ? "border-red-500" : ""
-                  }`}
+                className={`rounded-3xl border text-white border-white justify-start items-center p-[.8rem] w-full  bg-transparent focus:outline-white  focus:border-white ${
+                  formErrors.fullName ? "border-red-500" : ""
+                }`}
                 placeholder="Full Name"
               />
               {formErrors.fullName && (
@@ -246,7 +253,7 @@ const GetQoutes = () => {
             </div>
 
             {/* Inputs for Email and Phone */}
-            <div className="grid lg:grid-cols-2 my-7 gap-5"  data-aos="fade-up">
+            <div className="grid lg:grid-cols-2 my-7 gap-5" data-aos="fade-up">
               <div className="flex flex-col gap-1 justify-start items-start">
                 <label
                   htmlFor=""
@@ -265,8 +272,9 @@ const GetQoutes = () => {
                   onChange={(e) => {
                     setEmail(e.target.value);
                   }}
-                  className={`rounded-3xl border text-white border-white justify-start items-center p-[.8rem] w-full  bg-transparent focus:outline-white  focus:border-white ${formErrors.email ? "border-red-500" : ""
-                    }`}
+                  className={`rounded-3xl border text-white border-white justify-start items-center p-[.8rem] w-full  bg-transparent focus:outline-white  focus:border-white ${
+                    formErrors.email ? "border-red-500" : ""
+                  }`}
                   placeholder="Email Address"
                 />
                 {formErrors.email && (
@@ -291,8 +299,9 @@ const GetQoutes = () => {
                   onChange={(e) => {
                     setPhoneNumber(e.target.value);
                   }}
-                  className={`rounded-3xl border text-white border-white justify-start items-center p-[.8rem] w-full  bg-transparent focus:outline-white  focus:border-white ${formErrors.phoneNumber ? "border-red-500" : ""
-                    }`}
+                  className={`rounded-3xl border text-white border-white justify-start items-center p-[.8rem] w-full  bg-transparent focus:outline-white  focus:border-white ${
+                    formErrors.phoneNumber ? "border-red-500" : ""
+                  }`}
                   placeholder="Phone Number"
                 />
                 {formErrors.phoneNumber && (
@@ -302,7 +311,7 @@ const GetQoutes = () => {
             </div>
 
             {/* Inputs for Country  and Project type */}
-            <div className="grid lg:grid-cols-2 my-7 gap-5"  data-aos="fade-up">
+            <div className="grid lg:grid-cols-2 my-7 gap-5" data-aos="fade-up">
               <div className="flex flex-col gap-1 justify-start items-start">
                 <label
                   htmlFor=""
@@ -321,8 +330,9 @@ const GetQoutes = () => {
                   onChange={(e) => {
                     setCountry(e.target.value);
                   }}
-                  className={`rounded-3xl text-white border border-white justify-start items-center p-[.8rem] w-full  bg-transparent focus:outline-white  focus:border-white ${formErrors.country ? "border-red-500" : ""
-                    }`}
+                  className={`rounded-3xl text-white border border-white justify-start items-center p-[.8rem] w-full  bg-transparent focus:outline-white  focus:border-white ${
+                    formErrors.country ? "border-red-500" : ""
+                  }`}
                   placeholder="Country"
                 />
                 {formErrors.country && (
@@ -346,8 +356,9 @@ const GetQoutes = () => {
                   onChange={(e) => {
                     setProjectType(e.target.value);
                   }}
-                  className={`rounded-3xl border text-white border-white justify-start items-center p-[.8rem] w-full bg-transparent focus:outline-white  focus:border-white ${formErrors.projectType ? "border-red-500" : ""
-                    }`}
+                  className={`rounded-3xl border text-white border-white justify-start items-center p-[.8rem] w-full bg-transparent focus:outline-white  focus:border-white ${
+                    formErrors.projectType ? "border-red-500" : ""
+                  }`}
                 >
                   {projects.map((option, index) => (
                     <option
@@ -365,7 +376,7 @@ const GetQoutes = () => {
               </div>
             </div>
             {/* Inputs for Technology  and Cost */}
-            <div className="grid lg:grid-cols-2 my-7 gap-5"  data-aos="fade-up">
+            <div className="grid lg:grid-cols-2 my-7 gap-5" data-aos="fade-up">
               <div className="flex flex-col gap-1 justify-start items-start">
                 <label
                   htmlFor=""
@@ -383,8 +394,9 @@ const GetQoutes = () => {
                   onChange={(e) => {
                     setTechnology(e.target.value);
                   }}
-                  className={`rounded-3xl border text-white border-white justify-start items-center p-[.8rem] w-full bg-transparent focus:outline-white  focus:border-white ${formErrors.technology ? "border-red-500" : ""
-                    }`}
+                  className={`rounded-3xl border text-white border-white justify-start items-center p-[.8rem] w-full bg-transparent focus:outline-white  focus:border-white ${
+                    formErrors.technology ? "border-red-500" : ""
+                  }`}
                 >
                   {technologies.map((option, index) => (
                     <option
@@ -418,8 +430,9 @@ const GetQoutes = () => {
                   onChange={(e) => {
                     setCost(e.target.value);
                   }}
-                  className={`rounded-3xl text-white border border-white justify-start items-center p-[.8rem] w-full  bg-transparent focus:outline-white  focus:border-white ${formErrors.cost ? "border-red-500" : ""
-                    }`}
+                  className={`rounded-3xl text-white border border-white justify-start items-center p-[.8rem] w-full  bg-transparent focus:outline-white  focus:border-white ${
+                    formErrors.cost ? "border-red-500" : ""
+                  }`}
                   placeholder="Cost"
                 />
                 {formErrors.cost && (
@@ -429,7 +442,10 @@ const GetQoutes = () => {
             </div>
 
             {/* Input for Project Description */}
-            <div className="flex flex-col gap-1 justify-start items-start my-10"  data-aos="fade-up">
+            <div
+              className="flex flex-col gap-1 justify-start items-start my-10"
+              data-aos="fade-up"
+            >
               <label
                 htmlFor=""
                 className="text-center text-white text-xl ms-4 font-normal font-varino capitalize leading-normal"
@@ -448,8 +464,9 @@ const GetQoutes = () => {
                   setProjectDescription(e.target.value);
                 }}
                 type="text"
-                className={`rounded-3xl border text-white border-white justify-start items-center p-[.8rem] w-full  bg-transparent focus:outline-white  focus:border-white ${formErrors.projectDescription ? "border-red-500" : ""
-                  }`}
+                className={`rounded-3xl border text-white border-white justify-start items-center p-[.8rem] w-full  bg-transparent focus:outline-white  focus:border-white ${
+                  formErrors.projectDescription ? "border-red-500" : ""
+                }`}
                 placeholder="Project Description"
               />
               {formErrors.projectDescription && (
@@ -458,7 +475,10 @@ const GetQoutes = () => {
             </div>
 
             {/* The FIle code is written below copy from there  */}
-            <div className="flex flex-col  items-start justify-start"  data-aos="fade-up">
+            <div
+              className="flex flex-col  items-start justify-start"
+              data-aos="fade-up"
+            >
               <label
                 htmlFor=""
                 className="text-center text-white text-xl ms-4 font-normal font-varino capitalize leading-normal my-2"
@@ -529,34 +549,35 @@ const GetQoutes = () => {
               </div>
 
               {selectedFile && (
-                <div className="relative flex flex-col items-center gap-2" style={{ marginTop: "20px" }}>
+                <div
+                  className="relative flex flex-col items-center gap-2"
+                  style={{ marginTop: "20px" }}
+                >
                   <div
                     className="absolute top-0 right-0 bg-white rounded-full cursor-pointer"
                     onClick={handleRemoveFile}
                   >
                     <XCircleIcon className="text-red-500 hover:text-black h-5 w-5" />
-
                   </div>
-                  {
-                    selectedFile.type === allowedFileTypes[0] || selectedFile.type === allowedFileTypes[1]
-                    && <Image
-                      src="/images/misc/doc.svg"
-                      alt={selectedFile.name}
-                      className="h-12 w-12 object-contain"
-                      width={0}
-                      height={0}
-                    />
-                  }
-                  {
-                    selectedFile.type === allowedFileTypes[2]
-                    && <Image
+                  {selectedFile.type === allowedFileTypes[0] ||
+                    (selectedFile.type === allowedFileTypes[1] && (
+                      <Image
+                        src="/images/misc/doc.svg"
+                        alt={selectedFile.name}
+                        className="h-12 w-12 object-contain"
+                        width={0}
+                        height={0}
+                      />
+                    ))}
+                  {selectedFile.type === allowedFileTypes[2] && (
+                    <Image
                       src="/images/misc/pdf.svg"
                       alt={selectedFile.name}
                       className="h-12 w-12 object-contain"
                       width={0}
                       height={0}
                     />
-                  }
+                  )}
                   <p className="text-white">
                     Selected File: {selectedFile.name}
                   </p>
@@ -576,7 +597,10 @@ const GetQoutes = () => {
               )}
             </div>
 
-            <div className="flex justify-center items-center"  data-aos="fade-up">
+            <div
+              className="flex justify-center items-center"
+              data-aos="fade-up"
+            >
               <div className="max-w-full text-end">
                 <button
                   disabled={isUploading}
@@ -587,8 +611,6 @@ const GetQoutes = () => {
                 </button>
               </div>
             </div>
-
-
           </form>
         </div>
       </section>

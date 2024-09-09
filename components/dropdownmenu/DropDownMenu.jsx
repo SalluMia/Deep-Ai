@@ -26,10 +26,10 @@ function DropDownMenu({ closeDropdown }) {
     //   name: "Our Gallery",
     //   path: "/ourgallery",
     // },
-    {
-      name: "Our Team",
-      path: "/ourteam",
-    },
+    // {
+    //   name: "Our Team",
+    //   path: "/ourteam",
+    // },
   ];
 
   const ref = useRef();
@@ -56,7 +56,7 @@ function DropDownMenu({ closeDropdown }) {
 
   return (
     <div className="relative" onClick={SettingMenu} ref={ref}>
-      <div className="cursor-pointer">
+      {/* <div className="cursor-pointer">
         <h1
           className="text-white font-monosans group-hover:text-gray-300 transition-colors
        duration-300 flex items-center gap-1"
@@ -64,7 +64,7 @@ function DropDownMenu({ closeDropdown }) {
           <span>More</span>
           <FaChevronDown className="text-sm" />
         </h1>
-      </div>
+      </div> */}
       {more && (
         <div
           className="bg-white backdrop-blur-lg lg:w-[160px] xl:w-[180px]  z-10 font-monosans group-hover:text-gray-300 transition-colors duration-300 lg:space-y-3 xl:space-y-3 flex flex-col p-5 border rounded-lg absolute top-10 left-0"

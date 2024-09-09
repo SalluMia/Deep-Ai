@@ -22,7 +22,7 @@ const data = [
   {
     heading: "What is Deep Ai?",
     detail:
-      "Deep Ai, is a progressive software development company based in Rawalpindi, Pakistan.",
+      "Welcome to Deep AI! Headquartered in the USA with dynamic regional offices in Pakistan and the UK, we specialize in cutting-edge frontend and backend development. Our expertise extends to powerful social media marketing strategies, ensuring your digital presence thrives in a competitive landscape. Join us in shaping the future of technology and digital engagement!",
   },
   {
     heading: "What services do you provide?",

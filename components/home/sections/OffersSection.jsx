@@ -42,7 +42,7 @@ const OffersSection = () => {
     },
     {
       id: 3,
-      title: "BLOCKCHAIN",
+      title: "Digital Marketing",
       description:
         "Pioneer Blockchain Applications Smart Contracts, Planet-Scale Web 3.0 DApps, DEFI, DEX—Unleashing Decentralized Innovation For Tomorrow's Marketplaces.",
       image: Blockchain,

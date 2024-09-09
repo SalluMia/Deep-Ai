@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Heading from "@/components/core/Heading";
@@ -9,7 +9,7 @@ import Image2 from "../../../public/images/projects/MacBook Pro 16-inch Space Bl
 import Image3 from "../../../public/images/projects/MacBook Pro 16-inch Space Black Front label.png";
 
 import ProjectsCard from "../ProjectsCard";
-import Button from "@/components/core/Button";
+// import Button from "@/components/core/Button";
 
 const ProjectsAndCaseStudy = () => {
   useEffect(() => {

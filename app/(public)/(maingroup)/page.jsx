@@ -15,9 +15,9 @@ export default function Home() {
       <WelcomeSection />
       <OffersSection />
       <WorkflowSection />
-      <ProjectAndCaseStudy />
-      <ExploreTechnologies />
-      <Occasions />
+      {/* <ProjectAndCaseStudy /> */}
+      {/* <ExploreTechnologies /> */}
+      {/* <Occasions /> */}
       {/* <NewsLetterSection /> */}
       {/* <NewsLetterSection /> */}
       {/* <ProjectAndCaseStudy/> */}
