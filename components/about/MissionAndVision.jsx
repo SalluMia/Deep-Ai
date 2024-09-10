@@ -50,11 +50,13 @@ const MissionAndVision = () => {
                 data-aos="fade-up"
                 className=" font-monosans  text-white font-[300] "
               >
-                At Deep Ai, we are dedicated to pioneering technological
-                excellence that transforms businesses. Our mission is to empower
-                clients with innovative solutions. Through a commitment to
-                quality and client success, we aim to be a catalyst for positive
-                change, fostering growth and progress in the digital landscape.
+                At Deep AI, we are driven by a passion for technological
+                excellence that transforms businesses and inspires progress. Our
+                mission is to empower our clients with groundbreaking solutions
+                that ignite growth and success. By upholding a commitment to
+                quality and fostering meaningful partnerships, we strive to be a
+                catalyst for positive change, paving the way for innovation in
+                the digital realm.
               </p>
             </div>
             <div className=" flex flex-col gap-5">
@@ -68,12 +70,13 @@ const MissionAndVision = () => {
                 data-aos="fade-up"
                 className=" font-monosans  text-white font-[300] "
               >
-                Deep Ai aspires to be a global technology leader, shaping its
-                rotation. We aim to create a dynamic digital space for companies
-                to evolve and thrive effortlessly. Staying ahead with
-                cutting-edge solutions and a culture of continuous improvement,
-                we seek to drive positive change through innovation, quality,
-                and unwavering commitment, leaving a lasting impact globally.
+                Deep AI envisions a future where we stand as a global technology
+                leader, revolutionizing the digital landscape. We aim to
+                cultivate a dynamic environment where businesses can seamlessly
+                evolve and thrive. Through our dedication to cutting-edge
+                solutions and a culture of relentless improvement, we seek to
+                drive impactful change, setting new standards of excellence and
+                leaving a lasting legacy on the world stage.
               </p>
             </div>
           </div>

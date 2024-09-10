@@ -134,19 +134,19 @@ const Footer = () => {
                       <Image src={phone} alt="phone" />
                     </div>
                     <div className="text-white text-md font-medium font-monosans">
-                      +92 323 9735118
+                      +92 304 8181449
                     </div>
                   </div>
 
                   <div className="justify-start items-center gap-5 inline-flex w-full">
-                    <CiLocationOn className="text-[50px] text-white" />
+                    <CiLocationOn className="text-[60px] text-white" />
                     <div className="text-white text-md font-medium font-monosans">
                       US - 2097 Prospect Ave Eastmeadow NY 11554
                     </div>
                   </div>
 
                   <div className="justify-start items-center gap-5 inline-flex w-full">
-                    <CiLocationOn className="text-[80px] text-white" />
+                    <CiLocationOn className="text-[90px] text-white" />
                     <div className="text-white text-md font-medium font-monosans">
                       Pakistan - 44000 Alright Tech Raja Asad Hameed Shaheed
                       Road, Shamsabad
