@@ -89,7 +89,7 @@ const ContactMain = () => {
                 data-aos="fade-up"
                 className=" text-white font-[500] text-[1.5rem] font-monosans"
               >
-                info@AlrightTech.com
+                info@deep-ai.us
               </p>
             </div>
             <div>
@@ -103,7 +103,7 @@ const ContactMain = () => {
                 data-aos="fade-up"
                 className=" text-white font-[500] text-[1.5rem] font-monosans"
               >
-                +92 349 5209847
+                +92 304 8181449
               </p>
             </div>
           </div>

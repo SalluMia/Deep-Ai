@@ -15,12 +15,11 @@ const AboutPage = () => {
   return (
     <div>
       <Banner />
-
       <HelpingGrow />
       <MissionAndVision />
       <OurNumbers />
-      <Experts />
-      <TeamLeads />
+      {/* <Experts /> */}
+      {/* <TeamLeads /> */}
       <Whyus />
     </div>
   );

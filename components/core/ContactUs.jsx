@@ -1,7 +1,7 @@
-'use client'
-import React, { useState,useEffect } from "react";
-import Aos from 'aos';
-import 'aos/dist/aos.css'
+"use client";
+import React, { useState, useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import Image from "next/image";
 import axios from "axios";
@@ -13,17 +13,15 @@ import RightGradient from "../../public/svgs/right.svg";
 import { BASEURL } from "@/utils/BASEURL";
 import { Toaster } from "react-hot-toast";
 
-
 const ContactUs = () => {
-
-  useEffect(()=>{
+  useEffect(() => {
     Aos.init();
-  },[])
+  }, []);
 
   // Initialize state variables for form inputs
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   // Function to handle form submission
   const handleContact = async (e) => {
@@ -84,8 +82,9 @@ const ContactUs = () => {
             CONTACT US
           </h1>
           <p
-            data-aos="fade-up" 
-            className="mt-1 sm:mt-2 text-[14px] sm:text-[16px] xl:text-[18px] text-center font-monosans text-white font-extralight w-10/12 md:w-[60%] xl:w-[65%]">
+            data-aos="fade-up"
+            className="mt-1 sm:mt-2 text-[14px] sm:text-[16px] xl:text-[18px] text-center font-monosans text-white font-extralight w-10/12 md:w-[60%] xl:w-[65%]"
+          >
             Connect with us for personalized solutions. Your gateway to
             innovation inquiries, collaborations, and support. Let&apos;s create
             together. Reach out and succeed.
@@ -95,12 +94,18 @@ const ContactUs = () => {
         {/* Form Section */}
         <div className="grid lg:grid-cols-2 lg:py-10 px-5 gap-8 sm:gap-20 lg:gap-28 xl:gap-40">
           {/* Image Section */}
-          <div className="flex justify-start items-center px-12 mt-6 sm:mt-10 lg:mt-0" data-aos="fade-up">
+          <div
+            className="flex justify-start items-center px-12 mt-6 sm:mt-10 lg:mt-0"
+            data-aos="fade-up"
+          >
             <Image className="w-[27.5rem]" src={globe} alt="globe" />
           </div>
 
           {/* Form Section */}
-          <div className="bg-gradient-to-r from-fuchsia-500 to-violet-500 rounded-3xl p-1" data-aos="fade-up">
+          <div
+            className="bg-gradient-to-r from-fuchsia-500 to-violet-500 rounded-3xl p-1"
+            data-aos="fade-up"
+          >
             <div className="relative flex flex-col gap-20 py-10 px-5 rounded-3xl bg-[#111424]">
               {/* Purple Gradient */}
               <div className="absolute ">

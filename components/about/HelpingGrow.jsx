@@ -27,7 +27,7 @@ const data = [
   {
     heading: "What services do you provide?",
     detail:
-      "We offer a comprehensive suite of services, including Gen AI, Web 3.0, Blockchain, Serverless Cloud, Full-Stack Apps, SAAS Development, UI/UX design, and Digital Marketing. Proficient in Flutter, Laravel, and MERN stack, they deliver customized, cutting-edge solutions, meeting clients' evolving needs. ",
+      "We offer a comprehensive suite of services, including Gen AI, Web 3.0, CMS, Serverless Cloud, Full-Stack Apps, SAAS Development, UI/UX design, and Digital Marketing. Proficient in Flutter, Laravel, and MERN stack, they deliver customized, cutting-edge solutions, meeting clients' evolving needs. ",
   },
 ];
 
@@ -77,8 +77,8 @@ const HelpingGrow = () => {
             data-aos="fade-up"
             className="text-[14px] sm:text-[16px] xl:text-[18px] text-center font-monosans text-white font-extralight w-10/12 md:w-6/12 xl:w-6/12"
           >
-            We are helping you grow with Web 3.0, where Gen AI, Blockchain, and
-            modern tech come together to achieve technological advancements.
+            We are helping you grow with Web 3.0, where Gen AI, CMS, and modern
+            tech come together to achieve technological advancements.
           </p>
         </div>
 

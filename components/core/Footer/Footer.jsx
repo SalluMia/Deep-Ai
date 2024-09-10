@@ -129,14 +129,14 @@ const Footer = () => {
                   className="w-[130px] h-[50px] xl:w-[161.461px] xl:h-[72.95px] lg:w-[140px] lg:h-[72.95px] md:w-[161.461px] md:h-[72.95px]"
                 />
                 <div className=" flex flex-col justify-start items-center gap-5 ">
-                  <div className="justify-start items-center gap-5 inline-flex w-full">
+                  {/* <div className="justify-start items-center gap-5 inline-flex w-full">
                     <div className="w-[30px] h-[30px] relative">
                       <Image src={phone} alt="phone" />
                     </div>
                     <div className="text-white text-md font-medium font-monosans">
                       +92 304 8181449
                     </div>
-                  </div>
+                  </div> */}
 
                   <div className="justify-start items-center gap-5 inline-flex w-full">
                     <CiLocationOn className="text-[60px] text-white" />
@@ -153,14 +153,14 @@ const Footer = () => {
                     </div>
                   </div>
 
-                  <div className="justify-start items-center gap-5 inline-flex w-full">
+                  {/* <div className="justify-start items-center gap-5 inline-flex w-full">
                     <div className="w-[30px] h-[30px] relative">
                       <Image src={clock} alt="clock" />
                     </div>
                     <div className="text-white text-md font-medium font-monosans">
                       Mon-Sat : 9am - 5pm
                     </div>
-                  </div>
+                  </div> */}
                   <div className="justify-start items-center gap-5 inline-flex w-full">
                     <div className="w-[30px] h-[30px] relative">
                       <div className="w-[30px] h-[30px] relative">
@@ -168,7 +168,7 @@ const Footer = () => {
                       </div>
                     </div>
                     <div className="text-white text-md font-medium font-monosans lowercase">
-                      info@AlrightTech.com
+                      info@deep-ai.us
                     </div>
                   </div>
                 </div>
@@ -181,7 +181,7 @@ const Footer = () => {
         <div className=" p-6 my-3">
           <div className="flex flex-col justify-center gap-3 sm:flex-row h-10 sm:justify-between items-center">
             <div className="text-white text-md font-medium font-monosans lowercase hidden sm:block">
-              info@alrighttech.com
+              info@deep-ai.us
             </div>
             <div className="h-[19px] justify-center items-start lg:gap-5 xl:gap-8 flex">
               {/* <div className=" flex flex-wrap justify-center items-center gap-5 ">
@@ -269,7 +269,7 @@ const Footer = () => {
         </div>
       </footer>
       <Link
-        href="https://api.whatsapp.com/send?phone=923495209847"
+        href="https://api.whatsapp.com/send?phone=923048181449"
         className="bottom-20 right-10 sm:bottom-14 sm:right-12 fixed bg-[#49E670] rounded-full animate-spin-stop-infinite"
       >
         <FaWhatsapp className="text-5xl text-white p-2" />

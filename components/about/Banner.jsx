@@ -41,7 +41,7 @@ const Banner = () => {
             ABOUT US
           </h1>
           <p  data-aos="fade-up"  className="text-[14px] sm:text-[16px] xl:text-[18px] text-center font-monosans text-white font-extralight w-10/12 md:w-[60%] xl:w-[65%]">
-          Visit our domain where state-of-the-art technology meets to create inventive solutions in blockchain, Web 3.0, Gen AI, and more.
+          Visit our domain where state-of-the-art technology meets to create inventive solutions in CMS, Web 3.0, Gen AI, and more.
           </p>
         </div>
         <div className="relative "  data-aos="fade-up">

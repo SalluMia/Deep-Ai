@@ -1,12 +1,12 @@
-'use client'
-import React, { useState,useEffect } from "react";
-import Aos from 'aos';
-import 'aos/dist/aos.css'
+"use client";
+import React, { useState, useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import Image from "next/image";
 import WorkFlowImage from "../../../public/images/workflowImages/WorkflowImage.png";
 
-import SECPImage from "../../../public/images/awardsImages/image 1.png";
+// import SECPImage from "../../../public/images/awardsImages/image 1.png";
 import PSEBImage from "../../../public/images/awardsImages/image 2.png";
 import PASHAImage from "../../../public/images/awardsImages/image 3.png";
 import FBRImage from "../../../public/images/awardsImages/image 4.png";
@@ -14,8 +14,16 @@ import NCCS from "../../../public/images/awardsImages/NCCS.png";
 import PCC from "../../../public/images/awardsImages/Pccc.png";
 import AirUni from "../../../public/images/awardsImages/AirUni.png";
 import AridUni from "../../../public/images/awardsImages/Arid.png";
-import HEC from "../../../public/images/awardsImages/Hec.png";
-import PKCERT from "../../../public/images/awardsImages/PKCERT.png";
+import brand1 from "../../../public/images/brand1.jpeg";
+import brand2 from "../../../public/images/brand2.jpeg";
+import brand3 from "../../../public/images/brand3.jpeg";
+import brand4 from "../../../public/images/brand4.jpeg";
+import brand5 from "../../../public/images/brand5.jpeg";
+import brand6 from "../../../public/images/brand6.jpeg";
+import brand7 from "../../../public/images/brand7.jpeg";
+
+// import HEC from "../../../public/images/awardsImages/Hec.png";
+// import PKCERT from "../../../public/images/awardsImages/PKCERT.png";
 
 import AchivementsLine from "../../../public/images/workflowImages/AchivementsLine.png";
 
@@ -29,9 +37,9 @@ import centerGradient from "../../../public/svgs/Center1.svg";
 const WorkflowSection = () => {
   const [counterOn, setCounterOn] = useState(false);
 
-  useEffect(()=>{
+  useEffect(() => {
     Aos.init();
-  },[])
+  }, []);
 
   return (
     <div className="mt-10 mb-16">
@@ -47,9 +55,12 @@ const WorkflowSection = () => {
 
         {/* ////// Why Choose US section /////// */}
         <div className="flex flex-col items-center space-y-10">
-          <div className="flex flex-col space-y-3 sm:space-y-4 items-center" >
+          <div className="flex flex-col space-y-3 sm:space-y-4 items-center">
             <Heading>OUR WORK FLOW</Heading>
-            <p data-aos="fade-up" className="text-[14px] sm:text-[16px] xl:text-[18px] lg:text-[18px] text-center font-monosans text-white font-extralight w-[90%] md:w-8/12 xl:w-full">
+            <p
+              data-aos="fade-up"
+              className="text-[14px] sm:text-[16px] xl:text-[18px] lg:text-[18px] text-center font-monosans text-white font-extralight w-[90%] md:w-8/12 xl:w-full"
+            >
               Our Professional Workflow, Certifications, Awards And Numbers Will
               Prove The Quality We Offer.
             </p>
@@ -58,13 +69,14 @@ const WorkflowSection = () => {
           <Image
             className="w-[320px] sm:w-[600px] md:w-[800px] lg:w-[1000px] xl:w-[1000px] object-contain  select-none no_drag"
             alt="WorkflowImage"
-            src={WorkFlowImage} data-aos="fade-up"
+            src={WorkFlowImage}
+            data-aos="fade-up"
           />
         </div>
         {/* //////    awards & certifications    /////// */}
         <div className="h-full flex flex-col justify-between items-center  gap-5   py-10 lg:py-20">
           <h1
-          data-aos="fade-up"
+            data-aos="fade-up"
             className="font-varino text-[26px] sm:text-[35px] xl:text-[66px]  text-center "
             style={{
               background: "linear-gradient(to bottom, white, gray)",
@@ -76,20 +88,97 @@ const WorkflowSection = () => {
           </h1>
 
           <div className="flex flex-wrap gap-3 sm:gap-5 space-y-6 lg:space-x-4 lg:space-y-4 place-content-center items-center xl:space-x-4 ">
-            <Image src={SECPImage} alt="SECPImage" className="w-[80px]  sm:w-[120px] sm:h-auto"  data-aos="fade-up"/>
+            {/* <Image src={SECPImage} alt="SECPImage" className="w-[80px]  sm:w-[120px] sm:h-auto"  data-aos="fade-up"/> */}
 
-            <Image src={PASHAImage} alt="PASHAImage" className="w-[80px]  sm:w-[120px] sm:h-auto"  data-aos="fade-up"/>
+            <Image
+              src={PASHAImage}
+              alt="PASHAImage"
+              className="w-[80px]  sm:w-[120px] sm:h-auto"
+              data-aos="fade-up"
+            />
 
-            <Image src={PSEBImage} alt="PSEBImage" className="w-[80px]  sm:w-[120px] sm:h-auto"  data-aos="fade-up"/>
+            <Image
+              src={PSEBImage}
+              alt="PSEBImage"
+              className="w-[80px]  sm:w-[120px] sm:h-auto"
+              data-aos="fade-up"
+            />
 
-            <Image src={FBRImage} alt="FBR" className="w-[80px]  sm:w-[120px] sm:h-auto"  data-aos="fade-up"/>
+            <Image
+              src={FBRImage}
+              alt="FBR"
+              className="w-[80px]  sm:w-[120px] sm:h-auto"
+              data-aos="fade-up"
+            />
 
-            <Image src={NCCS} alt="NCCS" className="w-[80px]  sm:w-[120px] sm:h-auto"  data-aos="fade-up"/>
-            <Image src={PCC} alt="PCC" className="w-[80px]  sm:w-[120px] sm:h-auto"  data-aos="fade-up"/>
-            <Image src={AirUni} alt="AirUni" className="w-[80px]  sm:w-[120px] sm:h-auto"  data-aos="fade-up"/>
-            <Image src={AridUni} alt="AridUni" className="w-[80px]  sm:w-[120px] sm:h-auto"  data-aos="fade-up"/>
-            <Image src={HEC} alt="HEC" className="w-[80px]  sm:w-[120px] sm:h-auto"  data-aos="fade-up"/>
-            <Image src={PKCERT} alt="PKCERT" className="w-[80px]  sm:w-[120px] sm:h-auto"  data-aos="fade-up"/>
+            <Image
+              src={NCCS}
+              alt="NCCS"
+              className="w-[80px]  sm:w-[120px] sm:h-auto"
+              data-aos="fade-up"
+            />
+            <Image
+              src={PCC}
+              alt="PCC"
+              className="w-[80px]  sm:w-[120px] sm:h-auto"
+              data-aos="fade-up"
+            />
+            <Image
+              src={AirUni}
+              alt="AirUni"
+              className="w-[80px]  sm:w-[120px] sm:h-auto"
+              data-aos="fade-up"
+            />
+            <Image
+              src={AridUni}
+              alt="AridUni"
+              className="w-[80px]  sm:w-[120px] sm:h-auto"
+              data-aos="fade-up"
+            />
+            <Image
+              src={brand1}
+              alt=""
+              className="w-[80px]  sm:w-[120px] sm:h-auto"
+              data-aos="fade-up"
+            />
+            <Image
+              src={brand2}
+              alt=""
+              className="w-[80px]  sm:w-[120px] sm:h-auto"
+              data-aos="fade-up"
+            />
+            <Image
+              src={brand3}
+              alt=""
+              className="w-[80px]  sm:w-[120px] sm:h-auto"
+              data-aos="fade-up"
+            />
+            <Image
+              src={brand4}
+              alt=""
+              className="w-[80px]  sm:w-[120px] sm:h-auto"
+              data-aos="fade-up"
+            />
+            <Image
+              src={brand5}
+              alt=""
+              className="w-[80px]  sm:w-[120px] sm:h-auto"
+              data-aos="fade-up"
+            />
+            <Image
+              src={brand6}
+              alt=""
+              className="w-[80px]  sm:w-[120px] sm:h-auto"
+              data-aos="fade-up"
+            />
+            <Image
+              src={brand7}
+              alt=""
+              className="w-[80px]  sm:w-[120px] sm:h-auto"
+              data-aos="fade-up"
+            />
+            {/* <Image src={HEC} alt="HEC" className="w-[80px]  sm:w-[120px] sm:h-auto"  data-aos="fade-up"/> */}
+            {/* <Image src={PKCERT} alt="PKCERT" className="w-[80px]  sm:w-[120px] sm:h-auto"  data-aos="fade-up"/> */}
           </div>
         </div>
 
@@ -104,7 +193,7 @@ const WorkflowSection = () => {
 
           {/* ////////////////////////////////////////// */}
           <h1
-           data-aos="fade-up"
+            data-aos="fade-up"
             className="font-varino text-[26px] sm:text-[35px] xl:text-[66px] text-center mb-16"
             style={{
               background: "linear-gradient(to bottom, white, gray)",
@@ -125,7 +214,8 @@ const WorkflowSection = () => {
                 src={AchivementsLine}
                 // height={500}
                 // width={153}
-                className="h-[420px] sm:h-[500px]"  data-aos="fade-up"
+                className="h-[420px] sm:h-[500px]"
+                data-aos="fade-up"
               />
               <div
                 className="lg:-space-y-2 xl:-space-y-3 absolute -top-6 sm:-top-10 -left-[90px] xl:-top-9 xl:-left-[220px] lg:-top-9 lg:-left-[220px] flex-col items-center justify-center text-center xl:w-fit lg:w-fit w-8/12"
@@ -133,7 +223,8 @@ const WorkflowSection = () => {
                   background: "linear-gradient(to bottom, white, gray)",
                   WebkitBackgroundClip: "text",
                   color: "transparent",
-                }}  data-aos="fade-up"
+                }}
+                data-aos="fade-up"
               >
                 <p className="text-[18px] sm:text-[30px] xl:text-[42px] lg:text-[32px] font-monosans font-bold">
                   {counterOn && (
@@ -156,7 +247,8 @@ const WorkflowSection = () => {
                   background: "linear-gradient(to bottom, white, gray)",
                   WebkitBackgroundClip: "text",
                   color: "transparent",
-                }}  data-aos="fade-up"
+                }}
+                data-aos="fade-up"
               >
                 <p className="text-[18px] sm:text-[30px] xl:text-[42px] lg:text-[32px] font-monosans font-bold">
                   {counterOn && (
@@ -175,7 +267,8 @@ const WorkflowSection = () => {
                   background: "linear-gradient(to bottom, white, gray)",
                   WebkitBackgroundClip: "text",
                   color: "transparent",
-                }}  data-aos="fade-up"
+                }}
+                data-aos="fade-up"
               >
                 <p className="text-[18px] sm:text-[30px] xl:text-[42px] lg:text-[32px] font-monosans font-bold">
                   {counterOn && (
@@ -194,7 +287,8 @@ const WorkflowSection = () => {
                   background: "linear-gradient(to bottom, white, gray)",
                   WebkitBackgroundClip: "text",
                   color: "transparent",
-                }}  data-aos="fade-up"
+                }}
+                data-aos="fade-up"
               >
                 <p className="text-[18px] sm:text-[30px] xl:text-[42px] lg:text-[32px] font-monosans font-bold">
                   {counterOn && (
