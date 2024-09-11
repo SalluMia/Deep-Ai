@@ -37,7 +37,7 @@ const ContactUs = () => {
     try {
       // Make a POST request to the backend API
       const response = await axios.post(`${BASEURL}/api/contact-us`, reqPacket);
-
+      
       // Check if the request was successful (status code 201)
       if (response.status === 201) {
         console.log(response);
