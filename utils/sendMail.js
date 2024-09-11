@@ -1,18 +1,19 @@
 import nodemailer from "nodemailer";
-export const emailSent = (email, companyEmail,CC, output, subject) => {
+export const emailSent = (email, companyEmail, CC, output, subject) => {
   return new Promise((resolve, reject) => {
     var transporter = nodemailer.createTransport({
-      host: "smtp.gmail.com",
+      // host: "smtp.gmail.com",
+      host: "deep-ai.us",
       port: 465,
       secure: true, // use SSL
-      service: "gmail",
+      // service: "gmail",
       auth: {
         user: process.env.EMAIL,
         pass: process.env.APP_PASSWORD,
       },
     });
     var mailOptions = {
-      from: email,
+      from: process.env.EMAIL,
       to: companyEmail,
       cc: CC,
       subject: subject,

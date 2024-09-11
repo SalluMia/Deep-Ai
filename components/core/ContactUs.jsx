@@ -18,10 +18,11 @@ const ContactUs = () => {
     Aos.init();
   }, []);
 
-  // Initialize state variables for form inputs
+  // Initialize state variables for form inputs and loading
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false); // New state for loading
 
   // Function to handle form submission
   const handleContact = async (e) => {
@@ -34,18 +35,25 @@ const ContactUs = () => {
       message: message,
     };
 
+    setLoading(true); // Set loading to true when starting the request
+
     try {
       // Make a POST request to the backend API
       const response = await axios.post(`${BASEURL}/api/contact-us`, reqPacket);
-      
+
       // Check if the request was successful (status code 201)
       if (response.status === 201) {
         console.log(response);
         toast.success("Email sent successfully!");
+        setName("");
+        setEmail("");
+        setMessage("");
       }
     } catch (error) {
       console.log(error);
       toast.error("Try again. Failed to send email.");
+    } finally {
+      setLoading(false); // Set loading to false after the request is completed
     }
   };
 
@@ -196,9 +204,35 @@ const ContactUs = () => {
                   {/* Submit Button */}
                   <button
                     type="submit"
-                    className="text-center text-white text-[16px] lg:text-lg font-medium font-monosans capitalize px-6 py-3 bg-sky-500 rounded-[90px] justify-center items-center gap-2.5 inline-flex cursor-pointer z-20"
+                    className={`text-center text-white text-[16px] lg:text-lg font-medium font-monosans capitalize px-6 py-3 rounded-[90px] justify-center items-center gap-2.5 inline-flex cursor-pointer z-20 ${
+                      loading ? "bg-gray-400" : "bg-sky-500"
+                    }`}
+                    disabled={loading} // Disable the button when loading
                   >
-                    Submit Message
+                    {loading ? (
+                      <svg
+                        className="animate-spin h-5 w-5 mr-3"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                      >
+                        <circle
+                          className="opacity-25"
+                          cx="12"
+                          cy="12"
+                          r="10"
+                          stroke="currentColor"
+                          strokeWidth="4"
+                        />
+                        <path
+                          className="opacity-75"
+                          fill="currentColor"
+                          d="M4 12a8 8 0 1 1 16 0A8 8 0 0 1 4 12z"
+                        />
+                      </svg>
+                    ) : (
+                      "Submit Message"
+                    )}
                   </button>
                 </div>
               </form>
