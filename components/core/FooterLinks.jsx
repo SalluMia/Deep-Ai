@@ -19,19 +19,23 @@ const FooterLinks = () => {
     {
       name: "Services",
       path: "/services",
-    },{
-        name: "Portfolio",
-        path: "/portfolio",
-      },{
-        name: "Our Product",
-        path: "/ourproducts",
-      },{
-        name: "Blogs",
-        path: "/blogs",
-      },{
-        name: "Contact",
-        path: "/contact",
-      },
+    },
+    {
+      name: "Portfolio",
+      path: "/portfolio",
+    },
+    // {
+    //   name: "Our Product",
+    //   path: "/ourproducts",
+    // },
+    {
+      name: "Blogs",
+      path: "/blogs",
+    },
+    {
+      name: "Contact",
+      path: "/contact",
+    },
   ];
   return (
     <>
@@ -51,7 +55,6 @@ const FooterLinks = () => {
           </div>
         </Link>
       ))}
-    
     </>
   );
 };
