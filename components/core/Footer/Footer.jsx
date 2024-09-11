@@ -4,6 +4,7 @@ import React from "react";
 
 import { FaWhatsapp } from "react-icons/fa6";
 import { CiLocationOn } from "react-icons/ci";
+import { MdOutlineMarkEmailRead } from "react-icons/md";
 
 import { useRouter } from "next/navigation";
 import Link from "next/link";
@@ -128,7 +129,7 @@ const Footer = () => {
                   alt="logo"
                   className="w-[130px] h-[50px] xl:w-[161.461px] xl:h-[72.95px] lg:w-[140px] lg:h-[72.95px] md:w-[161.461px] md:h-[72.95px]"
                 />
-                <div className=" flex flex-col justify-start items-center gap-5 ">
+                <div className=" flex flex-col justify-start items-center gap-3 ">
                   {/* <div className="justify-start items-center gap-5 inline-flex w-full">
                     <div className="w-[30px] h-[30px] relative">
                       <Image src={phone} alt="phone" />
@@ -140,14 +141,14 @@ const Footer = () => {
 
                   <div className="justify-start items-center gap-5 inline-flex w-full">
                     <CiLocationOn className="text-[60px] text-white" />
-                    <div className="text-white text-md font-medium font-monosans">
+                    <div className="text-white text-md font-medium font-monosan">
                       US - 2097 Prospect Ave Eastmeadow NY 11554
                     </div>
                   </div>
 
                   <div className="justify-start items-center gap-5 inline-flex w-full">
-                    <CiLocationOn className="text-[90px] text-white" />
-                    <div className="text-white text-md font-medium font-monosans">
+                    <CiLocationOn className="text-[100px] text-white" />
+                    <div className="text-white font-medium font-monosans">
                       Pakistan - 44000 Alright Tech Raja Asad Hameed Shaheed
                       Road, Shamsabad
                     </div>
@@ -162,12 +163,8 @@ const Footer = () => {
                     </div>
                   </div> */}
                   <div className="justify-start items-center gap-5 inline-flex w-full">
-                    <div className="w-[30px] h-[30px] relative">
-                      <div className="w-[30px] h-[30px] relative">
-                        <Image src={email} alt="clock" />
-                      </div>
-                    </div>
-                    <div className="text-white text-md font-medium font-monosans lowercase">
+                    <MdOutlineMarkEmailRead className="text-[35px] text-white font-light" />
+                    <div className="text-white text-md font-medium font-monosans ml-[5px]">
                       info@deep-ai.us
                     </div>
                   </div>
