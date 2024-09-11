@@ -32,7 +32,7 @@ export const POST = async (req, { params }) => {
     await emailSent(
       email,
       "info@alrighttech.com",
-      ["hr@alrighttech.com","waqarahmad.dev@gmail.com"],
+      ["hr@alrighttech.com", "waqarahmad.dev@gmail.com"],
       output,
       "Contact-us Inquiry"
     );
